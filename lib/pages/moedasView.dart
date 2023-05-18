@@ -21,29 +21,29 @@ class MoedasView extends StatefulWidget {
 
 class _MoedasViewState extends State<MoedasView> {
   //moéda
-  Item dollar = Item(nome: '', valor: '', variacao: '');
-  Item yen = Item(nome: '', valor: '', variacao: '');
-  Item euro = Item(nome: '', valor: '', variacao: '');
-  Item peso = Item(nome: '', valor: '', variacao: '');
+  Item dollar = Item(nome: '-', valor: 0.0, variacao: 0.0);
+  Item yen = Item(nome: '-', valor: 0.0, variacao: 0.0);
+  Item euro = Item(nome: '-', valor: 0.0, variacao: 0.0);
+  Item peso = Item(nome: '-', valor: 0.0, variacao: 0.0);
 
   Moeda moeda = Moeda();
 
   //ações
-  Item ibovespa = Item(nome: '', valor: '', variacao: '');
-  Item nasdaq = Item(nome: '', valor: '', variacao: '');
-  Item cac = Item(nome: '', valor: '', variacao: '');
-  Item ifix = Item(nome: '', valor: '', variacao: '');
-  Item dowJones = Item(nome: '', valor: '', variacao: '');
-  Item nikkei = Item(nome: '', valor: '', variacao: '');
+  Item ibovespa = Item(nome: '-', valor: 0.0, variacao: 0.0);
+  Item nasdaq = Item(nome: '-', valor: 0.0, variacao: 0.0);
+  Item cac = Item(nome: '-', valor:0.0, variacao: 0.0);
+  Item ifix = Item(nome: '-', valor: 0.0, variacao: 0.0);
+  Item dowJones = Item(nome: '-', valor: 0.0, variacao: 0.0);
+  Item nikkei = Item(nome: '-', valor: 0.0, variacao: 0.0);
 
   Acoes acoes = Acoes();
 
   //bitCoin
-  Item blockchain = Item(nome: '', valor: '', variacao: '');
-  Item coinBase = Item(nome: '', valor: '', variacao: '');
-  Item bitStamp = Item(nome: '', valor: '', variacao: '');
-  Item foxBit = Item(nome: '', valor: '', variacao: '');
-  Item mercadoBit = Item(nome: '', valor: '', variacao: '');
+  Item blockchain = Item(nome: '-', valor:  0.0, variacao:  0.0);
+  Item coinBase = Item(nome: '-', valor:  0.0, variacao:  0.0);
+  Item bitStamp = Item(nome: '-', valor:  0.0, variacao:  0.0);
+  Item foxBit = Item(nome: '-', valor:  0.0, variacao:  0.0);
+  Item mercadoBit = Item(nome: '-', valor:  0.0, variacao:  0.0);
 
   Bitcoin bitcoin = Bitcoin();
 
