@@ -80,7 +80,7 @@ class _MoedasViewState extends State<MoedasView> {
           valor: valFinance['results']['currencies']['ARS']['buy'],
           variacao: valFinance['results']['currencies']['ARS']['variation']);
 
-      moeda = Moeda(dollar:dollar,euro:euro ,peso:peso ,yen:yen);
+      moeda = Moeda(dollar: dollar, euro: euro, peso: peso, yen: yen);
 
       //ações
       ibovespa = Item(
@@ -109,7 +109,7 @@ class _MoedasViewState extends State<MoedasView> {
           variacao: valFinance['results']['stocks']['NIKKEI']['variation']);
 
       acoes = Acoes(
-          cac:cac,
+          cac: cac,
           dowJones: dowJones,
           ibovespa: ibovespa,
           ifix: ifix,
@@ -135,7 +135,7 @@ class _MoedasViewState extends State<MoedasView> {
           valor: valFinance['results']['bitcoin']['foxbit']['last'],
           variacao: valFinance['results']['bitcoin']['foxbit']['variation']);
       mercadoBit = Item(
-          nome: "Mercado Bitcoin",
+          nome: "Mercado Bit",
           valor: valFinance['results']['bitcoin']['mercadobitcoin']['buy'],
           variacao: valFinance['results']['bitcoin']['mercadobitcoin']
               ['variation']);
@@ -155,7 +155,7 @@ class _MoedasViewState extends State<MoedasView> {
     Navigator.pushNamed(
       context,
       '/acoes',
-      arguments: financas ,
+      arguments: financas,
     );
   }
 
@@ -173,8 +173,8 @@ class _MoedasViewState extends State<MoedasView> {
             child: Container(
               padding: EdgeInsets.all(20),
               decoration: BoxDecoration(
-                border: Border.all(
-                    color: Color.fromARGB(255, 0, 85, 17), width: 2),
+                border:
+                    Border.all(color: Color.fromARGB(255, 0, 85, 17), width: 2),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Column(children: [

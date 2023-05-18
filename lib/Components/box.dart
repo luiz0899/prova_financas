@@ -10,24 +10,21 @@ class Box extends StatefulWidget {
 
   @override
   State<Box> createState() => _BoxState();
-  
 }
 
 class _BoxState extends State<Box> {
   @override
   Widget build(BuildContext context) {
-
-                    
     Color color;
-    
+
     double variacaoValue = double.parse(widget.variacao);
 
     if (variacaoValue < 0) {
       color = Colors.red;
     } else {
       color = Colors.blue;
-    }   
-    
+    }
+
     return Padding(
       padding: const EdgeInsets.all(20),
       child: (Column(
@@ -37,8 +34,8 @@ class _BoxState extends State<Box> {
               Text(widget.nome,
                   style: TextStyle(
                       color: Color.fromARGB(255, 109, 109, 109),
-                      fontWeight: FontWeight.bold ,
-                      fontSize: 18 ))
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18))
             ],
           ),
           Row(
@@ -50,7 +47,7 @@ class _BoxState extends State<Box> {
                 height: 20,
                 child: Container(
                   decoration: BoxDecoration(
-               color: color,
+                    color: color,
                     borderRadius: BorderRadius.circular(5),
                   ),
                   child: Center(
